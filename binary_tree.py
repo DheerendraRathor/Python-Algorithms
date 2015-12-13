@@ -148,7 +148,7 @@ class BinaryTree(object):
         return traversal_list
 
 
-if __name__ == '__main__':
+def main():
     """
     Tree Structure:
             1
@@ -167,3 +167,7 @@ if __name__ == '__main__':
     assert tree.preorder_traversal(write=False) == [1, 2, 4, 5, 3]
     assert tree.postorder_traversal(write=False) == [1, 3, 2, 5, 4]
     assert tree.levelorder_traversal(write=False) == [1, 2, 3, 4, 5]
+
+
+if __name__ == '__main__':
+    main()
