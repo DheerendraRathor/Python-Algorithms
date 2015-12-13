@@ -4,7 +4,7 @@ https://en.wikipedia.org/wiki/Quicksort
 """
 
 
-def quicksort(lis: list, start: int, end: int) -> None:
+def quicksort(lis, start, end):
     """
     Take a non-empty list and do in-place quicksort
     :param lis: list to be sorted
@@ -39,7 +39,7 @@ def quicksort(lis: list, start: int, end: int) -> None:
         quicksort(lis, left_index + 1, end)
 
 
-if __name__ == '__main__':
+def main():
     lis1 = [4, 1, 2, 3, 9]
     lis2 = [1]
     lis3 = [2, 2, 1, -1, 0, 4, 5, 2]
@@ -52,3 +52,7 @@ if __name__ == '__main__':
 
     quicksort(lis3, 0, 7)
     assert lis3 == [-1, 0, 1, 2, 2, 2, 4, 5]
+
+
+if __name__ == '__main__':
+    main()

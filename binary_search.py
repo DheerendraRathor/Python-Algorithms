@@ -5,7 +5,7 @@ https://en.wikipedia.org/wiki/Binary_search_algorithm
 from bisect import bisect_left
 
 
-def pythonic_binary_search(lis: list, elem) -> int:
+def pythonic_binary_search(lis, elem):
     """
     Return the left most index of matched element in lis with elem using bisect_left
     Return -1 if match not found
@@ -18,7 +18,7 @@ def pythonic_binary_search(lis: list, elem) -> int:
     return -1
 
 
-def binary_search(lis: list, elem, start: int, end: int) -> int:
+def binary_search(lis, elem, start, end):
     """
     Return index of matched position of elem in lis between index start and end (inclusive) or return -1
     :param lis: Sorted list
@@ -47,7 +47,7 @@ def binary_search(lis: list, elem, start: int, end: int) -> int:
         return -1
 
 
-if __name__ == '__main__':
+def main():
     lis1 = [1, 2, 3, 4, 6, 7, 9]
     assert binary_search(lis1, 5, 0, 5) == -1
     assert pythonic_binary_search(lis1, 5) == -1
@@ -59,3 +59,7 @@ if __name__ == '__main__':
     lis3 = [-1, 0, 0, 0, 0, 1]
     assert pythonic_binary_search(lis3, 0) == 1
     assert binary_search(lis3, 0, 0, 5) != -1
+
+
+if __name__ == '__main__':
+    main()

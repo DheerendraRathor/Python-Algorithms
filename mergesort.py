@@ -4,7 +4,7 @@ https://en.wikipedia.org/wiki/Merge_sort
 """
 
 
-def merge(left: list, right: list) -> list:
+def merge(left, right):
     """
     Take two sorted lists and merge them into sorted list
     """
@@ -25,7 +25,7 @@ def merge(left: list, right: list) -> list:
     return merged_lis
 
 
-def mergesort(lis: list) -> list:
+def mergesort(lis):
     """
     Take a list and return sorted list using mergesort. Doesn't modify original list
     """
@@ -43,7 +43,11 @@ def mergesort(lis: list) -> list:
     return mergesorted_lis
 
 
-if __name__ == '__main__':
+def main():
     assert mergesort([4, 1, 2, 3, 9]) == [1, 2, 3, 4, 9]
     assert mergesort([1]) == [1]
     assert mergesort([2, 2, 1, -1, 0, 4, 5, 2]) == [-1, 0, 1, 2, 2, 2, 4, 5]
+
+
+if __name__ == '__main__':
+    main()
