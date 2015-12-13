@@ -5,4 +5,4 @@ python:
   - 3.5
 
 script:
-  - python sanity_chercker.py
+  - python sanity_checker.py
