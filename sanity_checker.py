@@ -2,11 +2,9 @@
 Run assertions of all file by calling main method of each file
 """
 
-import mergesort
-import quicksort
 import binary_search
 import binary_tree
-import insertion_sort
+from sort import insertion_sort, mergesort, quicksort
 
 
 def main():

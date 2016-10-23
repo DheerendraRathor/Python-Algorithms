@@ -3,6 +3,7 @@ Recursive insertion sort implementation in Python 3
 https://en.wikipedia.org/wiki/Insertion_sort
 """
 
+
 def insertion_sort(lis):
     """
     Implementation of recursive insertion sort.
@@ -14,6 +15,7 @@ def insertion_sort(lis):
             lis[j], lis[j-1] = lis[j-1], lis[j]
             j -= 1
     return lis
+
 
 def main():
     lis1 = [4, 1, 2, 3, 9]
@@ -35,4 +37,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-            
